@@ -6,7 +6,9 @@ public class Cylinder extends Circle{
     public Cylinder() {
         super();
     }
-
+    public Cylinder(double ratio, String color) {
+        super(ratio, color);
+    }
     public Cylinder(double ratio, String color, double heigth) {
         super(ratio, color);
         this.heigth = heigth;
@@ -19,10 +21,6 @@ public class Cylinder extends Circle{
     @Override
     public double area() {
         return ((2 * Math.PI) * this.heigth + (2 * super.area()));
-    }
-
-    public Cylinder(double ratio, String color) {
-        super(ratio, color);
     }
 
     @Override
