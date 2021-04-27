@@ -60,6 +60,15 @@ public class Main {
 
          */
 
+        Circulo c = new Circulo();
+        Circulo c2 = new Circulo(3);
+        Circulo c3 = new Circulo("orange",2);
 
+        System.out.println(c2);
+        System.out.println(c3 + " Area: " + c3.area() + " Perimetro: " + c3.perimetro());
+
+        Cuadrado bob = new Cuadrado(10,22.5);
+
+        System.out.println(bob + " Area" + bob.area() + " Perimetro" + bob.perimetro());
     }
 }
